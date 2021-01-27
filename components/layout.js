@@ -10,7 +10,7 @@ export const siteTitle = "erinfox.codes";
 export default function Layout({ children, home }) {
   const [isExpanded, toggleExpansion] = useState(false);
   return (
-    <div className="mx-16 mt-10 h-screen">
+    <div className="mx-16 mt-6 h-screen">
       <div className="">
         <div className="float-right z-10 -mr-20 -mt-16">
           <Image
@@ -26,11 +26,11 @@ export default function Layout({ children, home }) {
         <header>
           <h2>
             <Link href="/">
-              <a className="fixed text-5xl font-semibold">ERIN FOX</a>
+              <a className="fixed text-3xl font-semibold">ERIN FOX</a>
             </Link>
           </h2>
         </header>
-        <div className="flex-wrap sm:h-screen sm:items-start">
+        {/* <div className="flex-wrap sm:h-screen sm:items-start">
           <div className=" sm:hidden pl-2 absolute top-0 right-0 mr-2 mt-2">
             <button
               onClick={() => toggleExpansion(!isExpanded)}
@@ -52,8 +52,9 @@ export default function Layout({ children, home }) {
           >
             <Nav />
           </div>
-        </div>
-        <main>{children}</main>
+        </div> */}
+        <Nav />
+        <main className="pt-24 px-60">{children}</main>
         <div className="fixed bottom-0 right-0 flex flex-row pb-4 pr-4">
           <Link href="https://github.com/erinfox">
             <FaGithub
