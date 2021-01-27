@@ -3,11 +3,11 @@ import Link from "next/link";
 const Nav = ({ siteTitle, menuLinks }) => (
   <nav className="text-sm fixed pt-96">
     <ul className="flex flex-col">
-      <Link href="/">BLOG</Link>
-      <Link href="/">TALKS</Link>
-      <Link href="/">NEWSLETTER</Link>
-      <Link href="/">ABOUT</Link>
-      <Link href="/">CONTACT</Link>
+      <Link href="/blog">BLOG</Link>
+      <Link href="/talks">TALKS</Link>
+      <Link href="/newsletter">NEWSLETTER</Link>
+      <Link href="/about">ABOUT</Link>
+      <Link href="/contact">CONTACT</Link>
     </ul>
   </nav>
 );
